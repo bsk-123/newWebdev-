@@ -6,7 +6,7 @@ app.get("/",function(req,res){
     res.send("Hello,world");
 })
 
-
-app.listen("3000",function(){
+var port = process.env.PORT
+app.listen(port,function(){
     console.log("Server started!")
 })
